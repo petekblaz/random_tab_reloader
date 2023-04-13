@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="popup.css">
+  <script src="popup.js" defer></script>
+  <title>Reload Tab</title>
+</head>
+<body>
+  <h2>Reload this tab randomly:</h2>
+  <label for="from">between</label>
+  <input type="number" id="from" min="1" value="10">
+  <select id="from-unit">
+    <option value="seconds" selected>Seconds</option>
+    <option value="minutes">Minutes</option>
+    <option value="hours">Hours</option>
+  </select>
+  <label for="to">and</label>
+  <input type="number" id="to" min="1" value="60">
+  <select id="to-unit">
+    <option value="seconds" selected>Seconds</option>
+    <option value="minutes">Minutes</option>
+    <option value="hours">Hours</option>
+  </select>
+  <button id="start">Start</button>
+  <button id="stop" disabled>Stop</button>
+</body>
+</html>
